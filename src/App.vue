@@ -93,7 +93,7 @@ export default {
       if (this.searchQuery.trim()) {
         this.isLoading = true;
         try {
-          const response = await axios.post('http://localhost:3000/api/chat', {
+          const response = await axios.post('https://binokle-backend.vercel.app/api/chat', {
             message: this.searchQuery
           });
           this.searchResponse = response.data.response;
